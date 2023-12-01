@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fake customer detection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="navigation">
+    <div class="logo">
+      <a href="#">
+        <img src="images/logo.png" alt="logo"></a>
+    </div>
+
+    <div class="menu_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="active"><a href="#home">Home</a></li>
+        </li>
+        <li><a href="#price_tag"  class="price">Price</a>
+         
+        </li>
+        <li><a href="#">Our Tools</a></li>
+        <li><a href="#contact_us" >Connect Us</a></li>
+        <li><a href="#context_blogs">Blogs</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+
+  <div class="main_context" id="home">
+    <h1>Fake Customer Detect</h1>
+    <div class="input_container">
+      <div class="country_code"><!-- country codes (ISO 3166) and Dial codes. -->
+        <select id="callingCode">
+          <option value="+1" country-name="United States">US (+1)</option>
+          <option value="+44" country-name="United Kingdom">UK (+44)</option>
+          <option value="+61" country-name="Australia">AU (+61)</option>
+          <option value="+64" country-name="New Zealand">NZ (+64)</option>
+          <option value="+86" country-name="China">CN (+86)</option>
+          <option value="+91" country-name="India">IN (+91)</option>
+          <option value="+33" country-name="France">FR (+33)</option>
+          <option value="+49" country-name="Germany">DE (+49)</option>
+          <option value="+81" country-name="Japan">JP (+81)</option>
+          <option value="+82" country-name="South Korea">KR (+82)</option>
+          <option value="+65" country-name="Singapore">SG (+65)</option>
+          <option value="+55" country-name="Brazil">BR (+55)</option>
+          <option value="+7" country-name="Russia">RU (+7)</option>
+          <option value="+27" country-name="South Africa">ZA (+27)</option>
+          <option value="+62" country-name="Indonesia">ID (+62)</option>
+          <option value="+20" country-name="Egypt">EG (+20)</option>
+          <option value="+971" country-name="United Arab Emirates">UAE (+971)</option>
+          <option value="+966" country-name="Saudi Arabia">SA (+966)</option>
+          <option value="+92" country-name="Pakistan">PK (+92)</option>
+          <option value="+880" selected country-name="Bangladesh">BD (+880)</option>
+          <option value="+54" country-name="Argentina">AR (+54)</option>
+          <option value="+52" country-name="Mexico">MX (+52)</option>
+          <option value="+41" country-name="Switzerland">CH (+41)</option>
+          <option value="+63" country-name="Philippines">PH (+63)</option>
+          <option value="+43" country-name="Austria">AT (+43)</option>
+          <option value="+420" country-name="Czech Republic">CZ (+420)</option>
+          <option value="+45" country-name="Denmark">DK (+45)</option>
+          <option value="+46" country-name="Sweden">SE (+46)</option>
+          <option value="+48" country-name="Poland">PL (+48)</option>
+        </select>
+      </div>
+      <input type="number" name="number" id="number" placeholder="015**-******">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="result_container">
+      <div class="result">
+        <div class="resutl_outer">
+        </div>
+        <div class="result_inner">70%</div>
+      </div>
+      <div class="result">
+        <div class="resutl_outer">
+        </div>
+        <div class="result_inner">70%</div>
+      </div>
+      <div class="result">
+        <div class="resutl_outer">
+        </div>
+        <div class="result_inner">70%</div>
+      </div>
+      <div class="result">
+        <div class="resutl_outer">
+        </div>
+        <div class="result_inner">70%</div>
+      </div>
+      <div class="result">
+        <div class="resutl_outer">
+        </div>
+        <div class="result_inner">70%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="price_contain"  id="price_tag">
+    <div class="price_cards">
+      <div class="price_card">
+        <h3>Beginner</h3>
+        <h1>$199</h1>
+        <p>Card service for 1 week</p>
+        <button>subcribe now</button>
+      </div>
+      <div class="price_card">
+        <h3>Intermediate</h3>
+        <h1>$399</h1>
+        <p>Card service for 1 month</p>
+        <button id="dt">subcribe now</button>
+      </div>
+      <div class="price_card">
+        <h3>Beginner</h3>
+        <h1>$999</h1>
+        <p>Card service for 1 year</p>
+        <button>subcribe now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="context_blogs" id="context_blogs">
+    <div>
+      <h1>Solutions for scaling <br> your business</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+    </div>
+
+    <div class="">
+      <ul>
+        <li><img src="images/icon.png" alt="icon">
+          <p>Elevate customer experience - A phone number is a vital contact point for service, as well as SMS and
+            mobile marketing.</p>
+        </li>
+        <li><img src="images/icon.png" alt="icon">
+          <p>Maximize revenue opportunities - Determine if a phone number is valid and accurate before picking up the telephone, allowing you to reach your customers and drive more revenue</p>
+        </li>
+        <li><img src="images/icon.png" alt="icon">
+          <p>Increase business performance - Identify which numbers you collect are mobile vs. landline, letting you take the proper approach with your communications. Maintain compliance and mitigate risks associated with telemarketing violations.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="our_partners">
+    <h1>Our partners</h1>
+    <ul>
+      <li><img src="images/oracle.png" alt="oracle"></li>
+      <li><img src="images/atos.png" alt=""></li>
+      <li><img src="images/becgroup.png" alt=""></li>
+      <li><img src="images/insights.png" alt=""></li>
+      <li><img src="images/likon.png" alt=""></li>
+      <li><img src="images/oracle.png" alt=""></li>
+      <li><img src="images/cococola.png" alt=""></li>
+      <li><img src="images/Logitech_logo_0.png" alt=""></li>
+    </ul>
+  </div>
+
+  <div class="contacts_us" id="contact_us">
+    <h1>Contact us</h1>
+    <div class="contact_us_container">
+      <div class="message_form">
+        <form action="">
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="full name">
+          </div>
+          <div>
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="johndoe@email.com">
+          </div>
+          <div>
+            <label for="message">Your message</label>
+            <textarea name="message" id="message" placeholder="your message here"></textarea>
+          </div>
+          <div>
+            <button>Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div  class="social_container">
+        <h1>Join Us</h1>
+        <ul>
+          <li><img src="images/social_media/facebook.png" alt=""></li>
+          <li><img src="images/social_media/linkdin.png" alt=""></li>
+          <li><img src="images/social_media/github.png" alt=""></li>
+          <li><img src="images/social_media/whatsapp.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer_container">
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">whatsapp</a></li>
+          <li><a href="#">linkdin</a></li>
+          <li><a href="#">github</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About us</h3>
+        <ul>
+          <li><a href="#">sms api</a></li>
+          <li><a href="#">portal</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">tools</a></li>
+          <li><a href="#">documantation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Our tools</h3>
+        <ul>
+          <li><a href="#">Yahoo checker</a></li>
+          <li><a href="#">gmail checker</a></li>
+          <li><a href="#">fake customer checker</a></li>
+          <li><a href="#">Plagiarism checker</a></li>
+          <li><a href="#">e commerce</a></li>
+          <li><a href="#">xomearn</a></li>
+        </ul>
+      </div></div>
+      <div class="footer_last">
+        <ul>
+          <li><a href="#"><img src="images/logo.png" alt="">privacy policy</a></li>
+          <li><a href="#">terms and condition</a></li>
+          <li><a href="#">careers</a></li>
+          <li><a href="#">portal</a></li>
+          <li><a href="#">&copy;portal.com</a></li>
+        </ul>
+      </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
